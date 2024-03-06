@@ -1,0 +1,13 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+.bi {
+    color: #000000;
+}

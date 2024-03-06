@@ -1,0 +1,95 @@
+/* superior */
+
+.cabecalho{
+    background-image: url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/18/ca/f3/1a/camping-a-lagoa.jpg?w=1200&h=-1&s=1');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1rem 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+.cabecalho-menu01{
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff83;
+    backdrop-filter: blur(2px);
+    border-radius: 1rem;
+    box-shadow: 0.3rem 0.3rem 0.35rem #0000001f;
+}
+.cabecalho-menu01-contato{
+    display: flex;
+    gap: 0.5rem;
+    color: #000000;
+}
+.cabecalho-menu01-social{
+    display: flex;
+    gap: 0.5rem;
+}
+
+/* meio */
+.cabecalho-menu02{
+    background: #080c0fef;
+    box-shadow: 0.3rem 0.3rem 0.35rem #0000001f;
+    backdrop-filter: blur(3px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #ffffff;
+    padding: 0.3rem 0.7rem;
+    border-radius: 1rem;
+}
+.cabecalho-menu02-logo{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.cabecalho-menu02-logo img{
+    width: 60px;
+    border-radius: 50%;
+}
+.cabecalho-menu02-menu{
+    display: flex;
+    gap: 0.5rem;
+}
+.cabecalho-menu02-menu li{
+    padding: 0.3rem 0.6rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.cabecalho-menu02-menu li:hover{
+    color: #ffb254;
+}
+
+/* inferior */
+.cabecalho-apresentacao{
+    background: #ffffff00;
+    border-radius: 1rem;
+    margin: 6rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    font-size: 2rem;
+    color: #ffffff;
+    padding: 1rem;
+    backdrop-filter: blur(3px);
+    box-shadow: 0.3rem 0.3rem 0.35rem #0000001f;
+}
+.cabecalho-apresentacao button{
+    border: 1px solid #ffb254;
+    padding: 0.3rem 0.4rem;
+    background: none;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: 0.3s;
+    border-radius: 1rem;
+}
+.cabecalho-apresentacao button:hover{
+    color: #ffb254;
+    transform: scale(1.1);
+}
