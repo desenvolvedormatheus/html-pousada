@@ -1,23 +1,18 @@
 /* superior */
 
 .cabecalho{
-    background-image: url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/18/ca/f3/1a/camping-a-lagoa.jpg?w=1200&h=-1&s=1');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 1rem 4rem;
     display: flex;
     flex-direction: column;
-    gap: 0.4rem;
+    font-size: 1.5rem;
+    background: #e4e4e4;
 }
 .cabecalho-menu01{
     display: flex;
     padding: 1rem;
     justify-content: space-between;
     align-items: center;
-    background: #ffffff83;
+    background: #e4e4e4;
     backdrop-filter: blur(2px);
-    border-radius: 1rem;
     box-shadow: 0.3rem 0.3rem 0.35rem #0000001f;
 }
 .cabecalho-menu01-contato{
@@ -40,7 +35,6 @@
     justify-content: space-between;
     color: #ffffff;
     padding: 0.3rem 0.7rem;
-    border-radius: 1rem;
 }
 .cabecalho-menu02-logo{
     display: flex;
@@ -61,35 +55,71 @@
     transition: 0.3s;
 }
 .cabecalho-menu02-menu li:hover{
-    color: #ffb254;
+    color: #cc7000;
 }
 
 /* inferior */
 .cabecalho-apresentacao{
-    background: #ffffff00;
-    border-radius: 1rem;
-    margin: 6rem auto;
+    border-radius: 0.3rem;
+    margin: 2rem auto;
+    position: relative;
+    display: flex;
+    Justify-content: center;
+    align-items: center;
+    background-color: #202020;
+    overflow: hidden;
+}
+.cabecalho-apresentacao::before{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 400%;
+    background-color: #fff;
+    animation: animate 4s linear infinite;
+}
+.cabecalho-apresentacao::after{
+    content: "";
+    position: absolute;
+    inset: 3px;
+    background-color: #e4e4e4;
+    border-radius: 0.3rem;
+}
+@keyframes animate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.cabecalho-apresentacao-content{
+    z-index: 10;
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 1rem;
     font-size: 2rem;
-    color: #ffffff;
-    padding: 1rem;
-    backdrop-filter: blur(3px);
-    box-shadow: 0.3rem 0.3rem 0.35rem #0000001f;
+    padding: 2rem;
 }
+
 .cabecalho-apresentacao button{
-    border: 1px solid #ffb254;
+    border: 1px solid #000000;
     padding: 0.3rem 0.4rem;
-    background: none;
-    color: #ffffff;
     cursor: pointer;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
+    border-radius: 0.3rem;
     transition: 0.3s;
-    border-radius: 1rem;
+    color: #ffffff;
+    background: #292929;
 }
-.cabecalho-apresentacao button:hover{
-    color: #ffb254;
-    transform: scale(1.1);
+.cabecalho-apresentacao button i{
+    color: #ffffff;
+}
+
+.fundo{
+    background-image: url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2a/60/45/84/pousada-bahia-tambor.jpg?w=1200&h=-1&s=1');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px;
 }
